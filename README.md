@@ -1,40 +1,123 @@
-🚀 Login & Signup System:
+# 🔐 Login Page Frontend
 
-A simple web application demonstrating a user authentication flow: users first sign up, then log in, and finally access the main website. Built using React
+A modern and responsive **Login & Signup frontend application** built with **React, Vite, Tailwind CSS, Axios, and React Router**.
 
+The application provides a clean authentication interface and is designed to communicate with a backend authentication API.
 
-✨ Features
-📝 Signup Page:
+## 🚀 Live Demo
 
-🧑‍💻 Users can create an account by entering their details.
+👉 **[View Live Application](https://login-page-seven-plum.vercel.app/)**
 
-✅ Basic input validation included (e.g., email format, password requirements).
+## ✨ Features
 
-🔒 Passwords are stored locally for demonstration purposes.
+* 🔐 User Login
+* 📝 User Signup / Registration
+* 🔄 Navigation between Login and Signup pages
+* ✅ Form validation
+* 🌐 Backend API integration using Axios
+* 📱 Responsive design
+* 🎨 Modern UI built with Tailwind CSS
+* ⚡ Fast development and production builds with Vite
+* 🧭 Client-side routing with React Router
+* ☁️ Deployed on Vercel
 
-🔑 Login Page:
+## 🛠️ Technologies Used
 
-👤 Users can log in using the credentials created during signup.
+| Technology       | Purpose                  |
+| ---------------- | ------------------------ |
+| React            | Frontend UI              |
+| Vite             | Development & build tool |
+| Tailwind CSS     | Styling                  |
+| Axios            | API requests             |
+| React Router     | Page navigation          |
+| JavaScript / JSX | Application logic        |
+| Vercel           | Deployment               |
 
-🏠 Redirects to the main website upon successful login.
+## 📂 Project Structure
 
-⚠️ Shows error messages if login fails.
+```text
+frontend/
+├── public/
+├── src/
+│   ├── Components/
+│   │   └── Signup_page/
+│   │       └── SUP.jsx
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── .gitignore
+├── package.json
+├── vite.config.js
+└── README.md
+```
 
+## ⚙️ Installation
 
-🌐 Website Page:
+Clone the repository:
 
-🔐 Accessible only after logging in.
+```bash
+git clone https://github.com/Shahzaib-27/Login_page_frontend.git
+```
 
-📄 Placeholder page for your main website content.
+Navigate to the project:
 
+```bash
+cd Login_page_frontend
+```
 
+Install dependencies:
 
-🛠️ Technologies Used:
+```bash
+npm install
+```
 
-HTML5 – Structure of the pages.
+Start the development server:
 
-CSS3 – Styling with gradients, shadows, and responsive design.
+```bash
+npm run dev
+```
 
-REAct – Form validation, storage, and navigation.
+The application will be available at the local Vite development URL.
 
-LocalStorage – For saving user data in browser (demo purposes).
+## 🔑 Environment Variables
+
+If the application uses environment variables for the backend API, create a `.env` file:
+
+```env
+VITE_API_URL=your_backend_api_url
+```
+
+> Do not commit `.env` files containing private keys, passwords, or other sensitive information.
+
+## 🏗️ Production Build
+
+Create a production build:
+
+```bash
+npm run build
+```
+
+Preview the production build:
+
+```bash
+npm run preview
+```
+
+## 🌐 Deployment
+
+The frontend is deployed using **Vercel**.
+
+Live application:
+
+**https://login-page-seven-plum.vercel.app/**
+
+## 👨‍💻 Author
+
+**Shahzaib Shahid**
+
+GitHub:
+https://github.com/Shahzaib-27
+
+## 📄 License
+
+This project is available for learning and development purposes.
