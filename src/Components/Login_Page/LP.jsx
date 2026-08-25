@@ -76,8 +76,8 @@ export default function LP() {
             {/* Submit */}
             <button type="submit">Login</button>
 
-            <pre>Don't have an account?</pre>
-            <p onClick={() => navigate("/")}>Sign Up</p>
+              <p>Don't have an account?</p>
+              <p onClick={() => navigate("/")}>Sign Up</p>
 
             {userError && <p className={SignUpcss.error}>{userError}</p>}
           </form>

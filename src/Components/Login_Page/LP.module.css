@@ -19,7 +19,7 @@
 
   border: 1px solid white;
   box-shadow: 0px 0px 40px rgb(0, 225, 255);
-  border-radius: 10px;
+  border-radius: 100px;
 
   width: 60%;
   max-width: 900px;
@@ -126,6 +126,7 @@
   cursor: pointer;
 
   margin-top: 5px;
+  margin-bottom: 5px;
 
   transition: all 0.2s ease-in-out;
 }
