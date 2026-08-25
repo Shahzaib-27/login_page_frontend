@@ -1,0 +1,186 @@
+
+.outercon {
+    background: linear-gradient(120deg, rgb(1, 1, 75) 2%, black 50%);
+    color: white;
+
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.innercon {
+    background: linear-gradient(220deg, rgb(1, 1, 107) 2%, black 60%);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid white;
+    box-shadow: 0px 0px 40px rgb(0, 225, 255);
+    border-radius: 10px;
+
+    width: 60%;
+    max-width: 500px;
+
+    padding: 30px;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.inner_con_Content_Text h1 {
+    font-size: 2.7rem;
+
+    margin-bottom: 20px;
+}
+
+
+.innerconContent h2 {
+    font-size: 2rem;
+
+    margin-bottom: 20px;
+}
+
+.innerconContent form {
+    width: 100%;
+}
+
+.innerconContent input {
+    width: 100%;
+
+    padding: 10px 35px 10px 10px; 
+    margin-bottom: 15px;
+
+    border: none;
+    border-bottom: 2px solid white;
+
+    background: transparent;
+    color: white;
+
+    outline: none;
+
+    font-size: 1rem;
+}
+
+.innerconContent input::placeholder {
+    color: white;
+
+    opacity: 0.7;
+}
+
+
+.innerconContent i {
+    position: absolute;
+    top: 50%;
+
+    transform: translateY(-50%);
+    color: white;
+}
+
+
+.innerconContent .password-icon {
+    right: 10px;
+    cursor: pointer;
+}
+
+
+.innerconContent button {
+    cursor: pointer;
+
+    width: 100%;
+
+    padding: 12px;
+    margin: 10px 0;
+
+    border: 1px solid white;
+    border-radius: 50px;
+
+    background: linear-gradient(180deg, rgb(0, 217, 255) 2%, black 90%);
+    color: white;
+
+    font-size: 1rem;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.innerconContent button:hover {
+    transform: scale(1.05);
+}
+
+
+.innerconContent p {
+    font-size: 1rem;
+
+    cursor: pointer;
+    
+    margin-top: 10px;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.innerconContent p:hover {
+    transform: scale(1.05);
+}
+
+
+.innerconContent .error {
+    color: #ff4d4d;
+
+    margin-top: 5px;
+}
+
+/* Responsive */
+
+@media (max-width: 480px) {
+    .inner_con_Content_Text h1 {
+        font-size: 1.5rem;
+    }
+
+    .innerconContent h2 {
+        font-size: 1.2rem;
+    }
+
+    .innerconContent input {
+        font-size: 0.8rem;
+    }
+
+    .innerconContent button {
+        font-size: 0.85rem;
+
+        padding: 8px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .innercon {
+        width: 90%;
+
+        padding: 20px;
+    }
+
+    .inner_con_Content_Text h1 {
+        font-size: 2rem;
+    }
+
+    .innerconContent h2 {
+        font-size: 1.5rem;
+    }
+
+    .innerconContent input {
+        font-size: 0.9rem;
+
+        padding: 8px 35px 8px 10px;
+    }
+
+    .innerconContent button {
+        font-size: 0.9rem;
+        
+        padding: 10px;
+    }
+}
+
+
