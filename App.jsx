@@ -8,8 +8,10 @@ import Webdata from "./Components/layout/Layout.jsx"
 export default function App() {
 return (
   <>
+
     <BrowserRouter>
       <Routes>
+
         <Route path='/' element={<SignupForm/>}/>
         <Route path='/loginpage' element={<LoginPageForm/>}/>
         <Route path='/webdata' element={<Webdata/>}/>
