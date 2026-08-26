@@ -15,31 +15,35 @@ export default function LP() {
   const [showUserPassword, setShowUserPassword] = useState(false);
 
  const handleLoginInfo = async (e) => {
+  e.preventDefault();
 
-    e.preventDefault();
+  try {
+    const response = await axios.post(
+      `${import.meta.env.VITE_API_URL}/user/login`,
+      {
+        name: user,
+        password: pass
+      }
+    );
 
-    try {
-      
-        const response = await axios.post(
-          `${import.meta.env.VITE_API_URL}/user/login`,
-          {
-            name: user,
-            password: pass
-          }
-        );
+    const token = response.data.data;
 
-        const token = response.data.data;
+    // Save JWT token
+    localStorage.setItem("token", token);
 
-        localStorage.setItem("token", token);
+    alert("Login Successful!");
 
-        navigate("/webdata");
+    // Go to dashboard/webdata
+    navigate("/webdata");
 
-    } catch (error) {
-        console.log(`Error Login User... ${error}`);
-        setError("Invalid credentials");
-        setUser("");
-        setPass("");
-    }
+  } catch (error) {
+    console.log("Error Login User...", error);
+
+    setError("Invalid credentials");
+
+    setUser("");
+    setPass("");
+  }
 };
 
   return (
