@@ -23,7 +23,7 @@ export default function SUP() {
 
         try {
 
-              const response = await axios.post(
+               await axios.post(
                 `${import.meta.env.VITE_API_URL}/user/register`,
               {
                 name: UserName,
@@ -32,8 +32,7 @@ export default function SUP() {
               }
             );
 
-            
-           
+    
 
             alert("User Created Successfully!");
 
@@ -42,7 +41,7 @@ export default function SUP() {
             setPassWord("");
 
 
-            console.log(response);
+            
          
 
             navigate("/loginpage");
