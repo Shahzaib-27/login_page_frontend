@@ -23,7 +23,9 @@ export default function SUP() {
 
         try {
 
-            await axios.post("http://localhost:5000/user/register",{
+            await axios.post(
+               `${import.meta.env.VITE_API_URL}/user/register`,
+              {
                     name: UserName,
                     email: UserEmail,
                     password: UserPassWord
