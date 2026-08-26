@@ -23,16 +23,18 @@ export default function SUP() {
 
         try {
 
-           const response = await axios.post(
-               `${import.meta.env.VITE_API_URL}/user/register`,
+            const response = await axios.post(
+              `${import.meta.env.VITE_API_URL}/user/register`,
               {
-                    name: UserName,
-                    email: UserEmail,
-                    password: UserPassWord
-                }
-            );   
-            
-            console.log(response.data);
+                name: UserName,
+                email: UserEmail,
+                password: UserPassWord
+              }
+            );
+
+            const token = response.data.data;
+
+            localStorage.setItem("token", token);
 
             alert("User Created Successfully!");
 
@@ -40,7 +42,7 @@ export default function SUP() {
             setEmail("");
             setPassWord("");
 
-            navigate("/loginpage");
+            navigate("/webdata");
 
         } catch (error) {
             setError("Error Creating User");
