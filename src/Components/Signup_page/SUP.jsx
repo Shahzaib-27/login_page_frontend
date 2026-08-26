@@ -32,6 +32,7 @@ export default function SUP() {
               }
             );
 
+            
             const token = response.data.data;
 
             localStorage.setItem("token", token);
@@ -42,7 +43,11 @@ export default function SUP() {
             setEmail("");
             setPassWord("");
 
-            navigate("/webdata");
+
+            console.log(response);
+            console.log(token);
+
+            navigate("/loginpage");
 
         } catch (error) {
             setError("Error Creating User");
