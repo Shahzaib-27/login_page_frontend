@@ -32,17 +32,12 @@ export default function SUP() {
               }
             );
 
-    
-
+  
             alert("User Created Successfully!");
 
             setUserName("");
             setEmail("");
             setPassWord("");
-
-
-            
-    
 
             navigate("/loginpage");
 
