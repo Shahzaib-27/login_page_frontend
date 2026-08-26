@@ -20,7 +20,7 @@ export default function LP() {
 
     try {
       
-       const response = await axios.post(
+        const response = await axios.post(
           `${import.meta.env.VITE_API_URL}/user/login`,
           {
             name: user,
