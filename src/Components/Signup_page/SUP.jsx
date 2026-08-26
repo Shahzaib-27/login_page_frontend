@@ -42,7 +42,7 @@ export default function SUP() {
 
 
             
-         
+    
 
             navigate("/loginpage");
 

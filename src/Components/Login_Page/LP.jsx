@@ -30,6 +30,9 @@ export default function LP() {
 
     // Save JWT token
     localStorage.setItem("token", token);
+    
+    // console.log(token);
+    // console.log(response);
 
     alert("Login Successful!");
 
